@@ -1,0 +1,47 @@
+.about{
+  background:#111827;
+}
+
+.about-container{
+  text-align:center;
+}
+
+.about-container h2{
+  font-size:40px;
+  margin-bottom:25px;
+  color:#38bdf8;
+}
+
+.about-container p{
+  max-width:850px;
+  margin:15px auto;
+  line-height:1.8;
+  color:#cbd5e1;
+}
+
+.about-cards{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:white;
+}

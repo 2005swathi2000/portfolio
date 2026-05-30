@@ -1,0 +1,31 @@
+.certifications {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.certifications h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-card {
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 250px;
+  transition: 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  background: #06b6d4;
+}
