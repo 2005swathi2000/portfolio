@@ -73,7 +73,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://linkedin.com/in/swathi-hanumanthu"
+              href="https://www.linkedin.com/in/hanumanthu-swathi-817265291/"
               target="_blank"
               rel="noreferrer"
             >
