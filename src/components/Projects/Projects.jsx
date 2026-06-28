@@ -20,6 +20,14 @@ function Projects() {
     },
 
     {
+      title: "DocSpot (MERN Stack)",
+      description:
+        "Full-stack doctor appointment booking application built with MongoDB, Express.js, React.js, and Node.js, featuring patient scheduling, dashboard analytics, and administrative panels.",
+      github:
+        "https://github.com/2005swathi2000/DocSpot-MERN",
+    },
+
+    {
       title: "Hotel Management System",
       description:
         "Java-based desktop application for customer management, room allocation and hotel operations.",
