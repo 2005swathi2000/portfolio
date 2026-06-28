@@ -1,20 +1,89 @@
-<<<<<<< HEAD
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio showcasing my skills, projects, achievements, certifications, and technical journey. Built with a clean UI, smooth animations, and optimized performance.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- Modern Responsive UI
+- Smooth Animations
+- Project Showcase
+- Skills & Tech Stack
+- Education & Certifications
+- Contact Form
+- Resume Download
+- Social Media Integration
+- Mobile Friendly
+- SEO Optimized
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# portfolio
->>>>>>> fb8eb5cceddf8bc0989d2bd9a0429d7c70c82a71
+- HTML5
+- CSS3
+- JavaScript
+- Tailwind CSS
+- Git
+- GitHub
+
+---
+
+## 📂 Sections
+
+- Home
+- About Me
+- Skills
+- Projects
+- Certifications
+- Resume
+- Contact
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots inside the `/screenshots` folder.
+
+```
+screenshots/
+    home.png
+    about.png
+    projects.png
+    contact.png
+```
+
+---
+
+## 🚀 Live Demo
+
+Coming Soon
+
+---
+
+## 📌 Future Improvements
+
+- Dark/Light Theme
+- Blog Section
+- Project Filtering
+- Visitor Analytics
+- Contact Backend
+
+---
+
+## 👨‍💻 Author
+
+**Hanumanthu Swathi**
+
+GitHub: https://github.com/yourusername
+
+LinkedIn:
+https://www.linkedin.com/in/swathi-hanumanthu-817265291/
+
+Portfolio:
+https://swathi-portfolio-omega.vercel.app/
+
+---
+
+⭐ If you like this project, consider giving it a star.
