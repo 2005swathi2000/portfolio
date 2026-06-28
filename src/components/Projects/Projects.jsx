@@ -4,11 +4,11 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   const projects = [
     {
-      title: "StudyCircle",
+      title: "StudyCircle v2",
       description:
-        "Full-stack collaborative learning workspace developed using React.js, Node.js, Express.js and MongoDB, enabling real-time resource sharing and student collaboration.",
+        "An upgraded full-stack collaborative learning platform featuring advanced real-time communication, robust resource sharing, and streamlined study tools for students. Built with React.js, Node.js, Express.js and MongoDB.",
       github:
-        "https://github.com/2005swathi2000/StudyCircle---Collaborative-Learning-Workspace",
+        "https://github.com/2005swathi2000/studycircle-v2",
     },
 
     {
