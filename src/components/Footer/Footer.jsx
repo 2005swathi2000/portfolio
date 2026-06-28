@@ -12,15 +12,15 @@ function Footer() {
 
       <div className="footer-icons">
 
-        <a href="#">
+        <a href="https://github.com/2005swathi2000" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
 
-        <a href="#">
+        <a href="https://www.linkedin.com/in/swathi-hanumanthu-817265291/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
 
-        <a href="#">
+        <a href="mailto:swathi.nannalu20@gmail.com">
           <FaEnvelope />
         </a>
 

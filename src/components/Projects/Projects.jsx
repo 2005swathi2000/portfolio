@@ -4,11 +4,19 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   const projects = [
     {
-      title: "Collaborative Learning Workspace",
+      title: "StudyCircle",
       description:
-        "Full-stack collaborative learning platform developed during internship using React.js, Node.js, Express.js and MongoDB.",
+        "Full-stack collaborative learning workspace developed using React.js, Node.js, Express.js and MongoDB, enabling real-time resource sharing and student collaboration.",
       github:
-        "https://github.com/2005swathi2000/Collaborative-Learning-Workspace",
+        "https://github.com/2005swathi2000/StudyCircle---Collaborative-Learning-Workspace",
+    },
+
+    {
+      title: "DevMind-AI",
+      description:
+        "AI-driven coding workspace featuring background job processing, interactive environments, code reviews, and integrated AI assistant chatbot. Built with Angular, Spring Boot, MySQL, and Gemini AI.",
+      github:
+        "https://github.com/2005swathi2000/DevMind-AI",
     },
 
     {
