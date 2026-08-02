@@ -47,7 +47,7 @@ function Hero() {
 
             <a
               href={resume}
-              download="Hanumanthu_Swathi_Resume.pdf"
+              download="H.SWATHI(RESUME).pdf"
               className="border border-cyan-500 hover:bg-cyan-500 px-6 py-3 rounded-xl font-semibold transition duration-300"
             >
               Download Resume
