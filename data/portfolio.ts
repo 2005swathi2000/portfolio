@@ -463,7 +463,7 @@ export const portfolioData: PortfolioData = {
       },
       {
         id: "vbcua-voice-analyser",
-        title: "VBCUA (Voice-Based Concept Analyser)",
+        title: "Voice-Based Concept Understanding Analyser",
         role: "Solo",
         category: "AI-ML",
         outcome:

@@ -49,3 +49,4 @@ draw.text((w//2, 510), "React 18 · Redux Toolkit · Node.js · Express.js · Mo
 docspot_path = os.path.join(out_dir, "docspot.webp")
 img.save(docspot_path, "WEBP", quality=90)
 print(f"Generated clean gradient placeholder {docspot_path}")
+

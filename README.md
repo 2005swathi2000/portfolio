@@ -104,44 +104,42 @@ Your existing portfolio is currently live on Vercel at:
 
 Follow these instructions to safely deploy this new codebase to the **exact same Vercel project and domain**:
 
-### ⚠️ Pre-Deployment Backup Checklist
-Before replacing your site:
-1. **Back up your old code**: If your existing site was in a GitHub repository, create a backup branch or download a ZIP archive from GitHub.
-2. **Back up Vercel Settings**: Check your Vercel Project Settings for any custom environment variables, analytics tokens, or custom domains.
+### ⚠️ Pre-Deployment Checklist
+Before updating your site:
+1. **Back up your old code**: Your old portfolio repository remains completely untouched and safe on GitHub.
+2. **Back up Vercel Settings**: Check your Vercel Project Settings for any custom environment variables or custom domains.
 3. **Verify Resume**: Confirm `public/resume.pdf` is present and valid.
 
-### Deployment Method 1: Push to Existing GitHub Repository (Recommended)
-If your Vercel project is connected to a GitHub repository:
-```bash
-# In the swathi-portfolio project directory:
-git add .
-git commit -m "feat: complete modern portfolio rebuild with Next.js App Router"
+### Recommended Deployment: Push to a New Repository (`swathi-portfolio-v2`) and Reconnect Vercel
 
-# Add your existing remote if not already set:
-git remote add origin https://github.com/2005swathi2000/<your-existing-repo-name>.git
+This is the cleanest and safest approach. It leaves your old portfolio repo intact as an archive while seamlessly updating the live domain (`swathi-portfolio-omega.vercel.app`) to this new codebase without any force-pushes:
 
-# Push to the branch Vercel monitors (usually 'main' or 'master'):
-git push origin master --force
-```
-*Vercel will detect the push, run `npm run build`, and automatically deploy the new version to `swathi-portfolio-omega.vercel.app`.*
+1. **Create a new GitHub repository**:
+   - Go to [GitHub](https://github.com/new) and create a new repository named **`swathi-portfolio-v2`** (Public).
 
-### Deployment Method 2: Connect a New GitHub Repository
-If you created a new GitHub repository for this rebuilt portfolio:
-1. Push this codebase to your new GitHub repository:
+2. **Push this codebase to `swathi-portfolio-v2`**:
    ```bash
-   git remote add origin https://github.com/2005swathi2000/swathi-portfolio.git
+   # In the swathi-portfolio project directory:
+   git remote add origin https://github.com/2005swathi2000/swathi-portfolio-v2.git
    git branch -M main
    git push -u origin main
    ```
-2. In your [Vercel Dashboard](https://vercel.com/dashboard):
-   - Select the existing project that serves `swathi-portfolio-omega.vercel.app`.
-   - Navigate to **Settings** -> **Git**.
-   - Click **Disconnect** under Connected Repository.
-   - Click **Connect** and select the new `swathi-portfolio` repository.
-   - Trigger a new deployment under the **Deployments** tab.
-   - Your existing domain (`swathi-portfolio-omega.vercel.app`) remains intact!
 
-### Deployment Method 3: Direct Vercel CLI Deployment
+3. **Reconnect your existing Vercel project to `swathi-portfolio-v2`**:
+   - Open your [Vercel Dashboard](https://vercel.com/dashboard) and select your existing project: **`swathi-portfolio-omega`**.
+   - Navigate to **Settings** -> **Git**.
+   - Under **Connected Git Repository**, click **Disconnect**.
+   - Click **Connect Git Repository**, choose your new **`swathi-portfolio-v2`** repository, and select branch **`main`**.
+   - Vercel will immediately build and deploy the new codebase.
+   - Your existing live domain (`https://swathi-portfolio-omega.vercel.app`) automatically serves this new site!
+
+4. **Configure Environment Variables in Vercel**:
+   - In **Settings** -> **Environment Variables**, add:
+     - **Key**: `NEXT_PUBLIC_FORMSPREE_ID`
+     - **Value**: Your Formspree Form ID (optional, fallback mailto is active by default)
+   - Go to **Deployments** and click **Redeploy** to apply the environment variable.
+
+### Alternative: Direct Vercel CLI Deployment
 ```bash
 # Install Vercel CLI globally if not already installed
 npm install -g vercel
@@ -149,7 +147,7 @@ npm install -g vercel
 # Login to your Vercel account
 vercel login
 
-# Link and deploy directly to production
+# Link to your existing project and deploy to production
 vercel --prod
 ```
 
@@ -165,7 +163,7 @@ vercel --prod
 | **Cloud Data Pipeline** | Python · Apache Beam · DuckDB · BigQuery · Pytest | Solo | Idempotent ELT & quarantine routing; **20/20 tests passing** |
 | **Customer Churn ML** | Python · Scikit-learn · XGBoost · Streamlit | Solo | Leakage-free ColumnTransformer; **Recall 78.88%, ROC-AUC 0.8434** |
 | **DocSpot** | React 18 · Redux Toolkit · Node · Express · MongoDB | Group | Optimistic concurrency & compound partial unique index |
-| **VBCUA** | Streamlit · Groq Whisper · Librosa · ReportLab | Solo | Acoustic speech diagnostics (RMS, pause ratio) & PDF reports |
+| **Voice-Based Concept Understanding Analyser (VBCUA)** | Streamlit · Groq Whisper · Librosa · ReportLab | Solo | Acoustic speech diagnostics (RMS, pause ratio) & PDF reports |
 
 ---
 
