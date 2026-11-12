@@ -587,9 +587,7 @@ export const portfolioData: PortfolioData = {
         type: "Contract",
         // Note: Swathi will supply the specific measurable project metric achieved during this tenure.
         // TODO: Add specific measurable project outcome / metric achieved during this tenure.
-        bullets: [
-          "Engineered full-stack features and API integrations across client-facing applications.",
-        ],
+        bullets: [],
       },
       {
         id: "exp-opensource",
@@ -598,8 +596,8 @@ export const portfolioData: PortfolioData = {
         period: "2023 – Present",
         type: "Open Source",
         bullets: [
-          "Authored and open-sourced 14 public engineering repositories across Next.js, Spring Boot, FastAPI, Streamlit, and Python.",
-          "Maintained 6 deployed production web applications with reproducible automated test suites (Vitest, Pytest) and cloud data pipelines.",
+          "Built and deployed 6 web apps spanning full-stack, AI, and data/ML.",
+          "Wrote automated test suites for projects using Vitest and Pytest (19/19 and 20/20 passing).",
         ],
       },
     ],

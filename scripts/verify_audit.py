@@ -47,3 +47,4 @@ check("Content Hygiene", "Zero Wireframe Placeholders", not has_wireframe, "All 
 print(json.dumps(checks, indent=2))
 passed = sum(1 for c in checks if c["passed"])
 print(f"\n{passed}/{len(checks)} checks passed!")
+

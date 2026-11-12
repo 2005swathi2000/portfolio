@@ -86,3 +86,4 @@ draw.text((200, 590), "Engine: Groq Whisper API (primary) - OpenAI Whisper (fall
 
 canvas_vbcua.save(os.path.join(out_dir, "vbcua.webp"), "WEBP", quality=88)
 print("Saved vbcua.webp")
+

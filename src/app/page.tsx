@@ -1,16 +1,26 @@
+import dynamic from "next/dynamic";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
-import { FeaturedProjects } from "@/components/FeaturedProjects";
 import { MoreProjects } from "@/components/MoreProjects";
 import { Experience } from "@/components/Experience";
 import { Certifications } from "@/components/Certifications";
 import { Achievements } from "@/components/Achievements";
 import { Education } from "@/components/Education";
 import { CodingProfiles } from "@/components/CodingProfiles";
-import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+
+// Dynamically import interactive client components below the fold with full SSR
+const FeaturedProjects = dynamic(
+  () => import("@/components/FeaturedProjects").then((mod) => mod.FeaturedProjects),
+  { ssr: true }
+);
+
+const Contact = dynamic(
+  () => import("@/components/Contact").then((mod) => mod.Contact),
+  { ssr: true }
+);
 
 export default function Home() {
   return (

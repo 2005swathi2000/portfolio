@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { portfolioData } from "@/data/portfolio";
 
@@ -57,14 +55,16 @@ export function Experience() {
                 </div>
 
                 {/* Bullets */}
-                <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                  {exp.bullets.map((bullet, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="text-indigo-500 font-bold shrink-0 mt-0.5">•</span>
-                      <span className="leading-relaxed">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+                {exp.bullets.length > 0 && (
+                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                    {exp.bullets.map((bullet, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-indigo-500 font-bold shrink-0 mt-0.5">•</span>
+                        <span className="leading-relaxed">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
