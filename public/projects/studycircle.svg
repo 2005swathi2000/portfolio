@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#sc-grad)" />
+  <rect x="20" y="20" width="760" height="440" rx="8" fill="#090d16" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <circle cx="48" cy="45" r="6" fill="#ef4444" opacity="0.8" />
+  <circle cx="68" cy="45" r="6" fill="#f59e0b" opacity="0.8" />
+  <circle cx="88" cy="45" r="6" fill="#10b981" opacity="0.8" />
+  <rect x="120" y="37" width="220" height="16" rx="4" fill="#1e293b" />
+  
+  <!-- Left Sidebar -->
+  <rect x="36" y="70" width="160" height="370" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  <rect x="52" y="90" width="110" height="14" rx="3" fill="#334155" />
+  <rect x="52" y="115" width="80" height="10" rx="3" fill="#1e293b" />
+  <rect x="52" y="135" width="120" height="10" rx="3" fill="#1e293b" />
+  <rect x="52" y="155" width="95" height="10" rx="3" fill="#1e293b" />
+  <rect x="52" y="190" width="128" height="32" rx="6" fill="#059669" opacity="0.2" stroke="#10b981" stroke-width="1" />
+  <text x="64" y="211" font-family="monospace" font-size="11" fill="#10b981">● Room Active (3)</text>
+  
+  <!-- Main Collaboration Canvas -->
+  <rect x="212" y="70" width="552" height="370" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  
+  <!-- Content Header -->
+  <text x="240" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="20" fill="#f8fafc">StudyCircle v2 — Collaborative Study Room</text>
+  <text x="240" y="140" font-family="monospace" font-size="12" fill="#94a3b8">Real-time WebSocket Sync · Shared Notes · Pomodoro · Whiteboard</text>
+  
+  <!-- Panels -->
+  <rect x="240" y="165" width="310" height="250" rx="6" fill="#1e293b" opacity="0.5" stroke="#334155" stroke-width="1" />
+  <text x="256" y="195" font-family="monospace" font-size="13" fill="#38bdf8"># Algorithms &amp; System Design</text>
+  <line x1="256" y1="210" x2="520" y2="210" stroke="#334155" stroke-width="1" />
+  <rect x="256" y="225" width="240" height="10" rx="2" fill="#475569" />
+  <rect x="256" y="245" width="280" height="10" rx="2" fill="#334155" />
+  <rect x="256" y="265" width="200" height="10" rx="2" fill="#334155" />
+  <rect x="256" y="285" width="260" height="10" rx="2" fill="#334155" />
+  <rect x="256" y="320" width="220" height="36" rx="4" fill="#0284c7" opacity="0.15" stroke="#38bdf8" stroke-width="1" />
+  <text x="270" y="342" font-family="monospace" font-size="11" fill="#38bdf8">Live Sync: 3 peers connected</text>
+  
+  <!-- Right Timer Card -->
+  <rect x="566" y="165" width="180" height="115" rx="6" fill="#1e293b" opacity="0.5" stroke="#334155" stroke-width="1" />
+  <text x="582" y="195" font-family="monospace" font-size="11" fill="#94a3b8">STUDY TIMER</text>
+  <text x="582" y="235" font-family="monospace" font-size="32" font-weight="700" fill="#10b981">24:59</text>
+  <text x="582" y="260" font-family="monospace" font-size="10" fill="#64748b">Synced Pomodoro Interval</text>
+  
+  <!-- Whiteboard badge -->
+  <rect x="566" y="295" width="180" height="120" rx="6" fill="#1e293b" opacity="0.5" stroke="#334155" stroke-width="1" />
+  <text x="582" y="325" font-family="monospace" font-size="11" fill="#94a3b8">WHITEBOARD</text>
+  <circle cx="620" cy="370" r="22" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4" />
+  <text x="660" y="374" font-family="monospace" font-size="11" fill="#fbbf24">Active</text>
+</svg>
+

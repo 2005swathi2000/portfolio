@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vb-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#vb-grad)" />
+  <rect x="20" y="20" width="760" height="440" rx="8" fill="#0f0c24" stroke="#6366f1" stroke-width="1.5" />
+  
+  <circle cx="48" cy="45" r="6" fill="#ef4444" opacity="0.8" />
+  <circle cx="68" cy="45" r="6" fill="#f59e0b" opacity="0.8" />
+  <circle cx="88" cy="45" r="6" fill="#10b981" opacity="0.8" />
+  <text x="120" y="49" font-family="monospace" font-size="12" fill="#a5b4fc">vbcua // audio-stream-understanding.py</text>
+  
+  <!-- Header Banner -->
+  <rect x="36" y="75" width="708" height="90" rx="6" fill="#201c54" stroke="#4f46e5" stroke-width="1" />
+  <text x="56" y="105" font-family="monospace" font-size="11" fill="#c7d2fe">AUDIO ANALYSIS &amp; NLP</text>
+  <text x="56" y="135" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="20" fill="#f5f3ff">Voice-Based Concept Understanding Analyser</text>
+  <text x="56" y="152" font-family="monospace" font-size="10" fill="#a5b4fc">Speech Recognition · Semantic Extraction · Streamlit</text>
+  
+  <line x1="500" y1="88" x2="500" y2="152" stroke="#3730a3" stroke-width="1" />
+  
+  <text x="520" y="105" font-family="monospace" font-size="11" fill="#c7d2fe">AUDIO PIPELINE</text>
+  <text x="520" y="140" font-family="monospace" font-weight="800" font-size="22" fill="#818cf8">Realtime STT</text>
+  
+  <!-- Audio Waveform Visualization -->
+  <rect x="36" y="185" width="410" height="235" rx="6" fill="#131032" stroke="#3730a3" stroke-width="1" />
+  <text x="56" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#f5f3ff">Acoustic Waveform &amp; Transcription</text>
+  
+  <!-- Waveform Bars -->
+  <g transform="translate(56, 235)">
+    <rect x="0" y="25" width="6" height="40" rx="3" fill="#6366f1" />
+    <rect x="12" y="15" width="6" height="60" rx="3" fill="#818cf8" />
+    <rect x="24" y="5" width="6" height="80" rx="3" fill="#a5b4fc" />
+    <rect x="36" y="20" width="6" height="50" rx="3" fill="#6366f1" />
+    <rect x="48" y="32" width="6" height="26" rx="3" fill="#4f46e5" />
+    <rect x="60" y="10" width="6" height="70" rx="3" fill="#818cf8" />
+    <rect x="72" y="0" width="6" height="90" rx="3" fill="#c7d2fe" />
+    <rect x="84" y="18" width="6" height="54" rx="3" fill="#818cf8" />
+    <rect x="96" y="28" width="6" height="34" rx="3" fill="#6366f1" />
+    <rect x="108" y="15" width="6" height="60" rx="3" fill="#818cf8" />
+    <rect x="120" y="8" width="6" height="74" rx="3" fill="#c7d2fe" />
+    <rect x="132" y="25" width="6" height="40" rx="3" fill="#6366f1" />
+    <rect x="144" y="35" width="6" height="20" rx="3" fill="#4f46e5" />
+    <rect x="156" y="12" width="6" height="66" rx="3" fill="#818cf8" />
+    <rect x="168" y="4" width="6" height="82" rx="3" fill="#a5b4fc" />
+    <rect x="180" y="22" width="6" height="46" rx="3" fill="#6366f1" />
+    <rect x="192" y="30" width="6" height="30" rx="3" fill="#4f46e5" />
+    <rect x="204" y="16" width="6" height="58" rx="3" fill="#818cf8" />
+    <rect x="216" y="6" width="6" height="78" rx="3" fill="#c7d2fe" />
+    <rect x="228" y="24" width="6" height="42" rx="3" fill="#6366f1" />
+    <rect x="240" y="32" width="6" height="26" rx="3" fill="#4f46e5" />
+    <rect x="252" y="10" width="6" height="70" rx="3" fill="#818cf8" />
+    <rect x="264" y="2" width="6" height="86" rx="3" fill="#c7d2fe" />
+    <rect x="276" y="18" width="6" height="54" rx="3" fill="#818cf8" />
+    <rect x="288" y="26" width="6" height="38" rx="3" fill="#6366f1" />
+    <rect x="300" y="14" width="6" height="62" rx="3" fill="#818cf8" />
+    <rect x="312" y="8" width="6" height="74" rx="3" fill="#c7d2fe" />
+    <rect x="324" y="22" width="6" height="46" rx="3" fill="#6366f1" />
+    <rect x="336" y="30" width="6" height="30" rx="3" fill="#4f46e5" />
+    <rect x="348" y="18" width="6" height="54" rx="3" fill="#818cf8" />
+    <rect x="360" y="28" width="6" height="34" rx="3" fill="#6366f1" />
+  </g>
+  
+  <rect x="56" y="345" width="370" height="55" rx="4" fill="#080616" />
+  <text x="68" y="367" font-family="monospace" font-size="10.5" fill="#38bdf8">&gt; "Explain polymorphism in object-oriented design"</text>
+  <text x="68" y="387" font-family="monospace" font-size="9.5" fill="#10b981">✓ Confidence: 0.96 · Audio Length: 3.4s · Noise Filtered</text>
+
+  <!-- Extracted Concepts & Semantic Breakdown -->
+  <rect x="460" y="185" width="284" height="235" rx="6" fill="#131032" stroke="#3730a3" stroke-width="1" />
+  <text x="478" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#f5f3ff">Concept Understanding</text>
+  
+  <rect x="478" y="235" width="248" height="42" rx="4" fill="#1e184a" stroke="#4f46e5" stroke-width="1" />
+  <text x="490" y="253" font-family="monospace" font-size="10" fill="#a5b4fc">PRIMARY TOPIC</text>
+  <text x="490" y="269" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#f5f3ff">Object-Oriented Programming</text>
+
+  <rect x="478" y="287" width="248" height="42" rx="4" fill="#1e184a" stroke="#4f46e5" stroke-width="1" />
+  <text x="490" y="305" font-family="monospace" font-size="10" fill="#a5b4fc">KEY CONCEPTS</text>
+  <text x="490" y="321" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#f5f3ff">Polymorphism · Method Overriding</text>
+
+  <rect x="478" y="339" width="248" height="60" rx="4" fill="#080616" />
+  <text x="490" y="359" font-family="monospace" font-size="10" fill="#fbbf24">STATUS: DEPLOYMENT PENDING</text>
+  <text x="490" y="377" font-family="monospace" font-size="9" fill="#94a3b8">Requires Streamlit Cloud / Spaces</text>
+  <text x="490" y="391" font-family="monospace" font-size="9" fill="#94a3b8">(WebSocket + PyTorch dependency)</text>
+</svg>
+

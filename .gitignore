@@ -6,7 +6,7 @@
 .pnp.js
 .yarn/install-state.gz
 
-# testing
+# testing & coverage
 /coverage
 
 # next.js
@@ -19,14 +19,19 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
-# debug
+# debug & logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
-# local env files
+# local env files (NEVER commit secrets)
+.env
 .env*.local
+.env.production
+.env.development
 
 # vercel
 .vercel
@@ -34,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python cache & audit artifacts
+__pycache__/
+*.pyc
+link_audit_report.json
+public/st-dump.html
+public/test-shot.png
+
+lighthouse-*.json

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="de-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#de-grad)" />
+  <rect x="20" y="20" width="760" height="440" rx="8" fill="#070c17" stroke="#2563eb" stroke-width="1.5" />
+  
+  <circle cx="48" cy="45" r="6" fill="#ef4444" opacity="0.8" />
+  <circle cx="68" cy="45" r="6" fill="#f59e0b" opacity="0.8" />
+  <circle cx="88" cy="45" r="6" fill="#10b981" opacity="0.8" />
+  <text x="120" y="49" font-family="monospace" font-size="12" fill="#60a5fa">cloud-data-pipeline // retail-analytics-elt</text>
+  
+  <!-- Pipeline Stages -->
+  <rect x="36" y="75" width="220" height="85" rx="6" fill="#172554" stroke="#1d4ed8" stroke-width="1" />
+  <text x="52" y="100" font-family="monospace" font-size="11" fill="#93c5fd">1. Ingestion Layer</text>
+  <text x="52" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="13" fill="#f8fafc">Raw Retail Events</text>
+  <text x="52" y="145" font-family="monospace" font-size="10" fill="#60a5fa">CSV &amp; JSON Batch/Stream</text>
+  
+  <text x="268" y="122" font-family="monospace" font-size="16" fill="#3b82f6">→</text>
+  
+  <rect x="296" y="75" width="220" height="85" rx="6" fill="#172554" stroke="#1d4ed8" stroke-width="1" />
+  <text x="312" y="100" font-family="monospace" font-size="11" fill="#93c5fd">2. Validation &amp; PII Gate</text>
+  <text x="312" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="13" fill="#f8fafc">Quarantine Engine</text>
+  <text x="312" y="145" font-family="monospace" font-size="10" fill="#60a5fa">Reason Codes: ERR_*</text>
+  
+  <text x="528" y="122" font-family="monospace" font-size="16" fill="#3b82f6">→</text>
+  
+  <rect x="556" y="75" width="188" height="85" rx="6" fill="#172554" stroke="#1d4ed8" stroke-width="1" />
+  <text x="572" y="100" font-family="monospace" font-size="11" fill="#93c5fd">3. Warehouse OLAP</text>
+  <text x="572" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="13" fill="#f8fafc">DuckDB / BigQuery</text>
+  <text x="572" y="145" font-family="monospace" font-size="10" fill="#60a5fa">Idempotent Deduplication</text>
+  
+  <!-- Metrics Strip -->
+  <rect x="36" y="180" width="708" height="75" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  <text x="60" y="210" font-family="monospace" font-size="10" fill="#94a3b8">PASSING TESTS</text>
+  <text x="60" y="240" font-family="monospace" font-size="20" font-weight="700" fill="#10b981">18 / 18 (100%)</text>
+  
+  <line x1="260" y1="190" x2="260" y2="245" stroke="#334155" stroke-width="1" />
+  
+  <text x="290" y="210" font-family="monospace" font-size="10" fill="#94a3b8">INGESTION INTEGRITY</text>
+  <text x="290" y="240" font-family="monospace" font-size="20" font-weight="700" fill="#38bdf8">100% Idempotent</text>
+  
+  <line x1="510" y1="190" x2="510" y2="245" stroke="#334155" stroke-width="1" />
+  
+  <text x="540" y="210" font-family="monospace" font-size="10" fill="#94a3b8">SQL SUITE</text>
+  <text x="540" y="240" font-family="monospace" font-size="20" font-weight="700" fill="#fbbf24">8 Verified Queries</text>
+  
+  <!-- Terminal Preview -->
+  <rect x="36" y="275" width="708" height="150" rx="6" fill="#030712" stroke="#1e293b" stroke-width="1" />
+  <text x="52" y="305" font-family="monospace" font-size="11" fill="#4ade80">$ pytest tests/ -v</text>
+  <text x="52" y="330" font-family="monospace" font-size="11" fill="#94a3b8">tests/test_validation.py::test_negative_quantity_quarantined PASSED [ 33%]</text>
+  <text x="52" y="355" font-family="monospace" font-size="11" fill="#94a3b8">tests/test_pii.py::test_customer_email_pseudonymized PASSED       [ 66%]</text>
+  <text x="52" y="380" font-family="monospace" font-size="11" fill="#94a3b8">tests/test_dedup.py::test_idempotent_reingestion_clean PASSED    [100%]</text>
+  <text x="52" y="405" font-family="monospace" font-size="11" fill="#22c55e">======================== 18 passed in 1.42s =========================</text>
+</svg>
+

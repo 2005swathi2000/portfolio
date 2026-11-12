@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#831843" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#cc-grad)" />
+  <rect x="20" y="20" width="760" height="440" rx="8" fill="#13040a" stroke="#be185d" stroke-width="1.5" />
+  
+  <circle cx="48" cy="45" r="6" fill="#ef4444" opacity="0.8" />
+  <circle cx="68" cy="45" r="6" fill="#f59e0b" opacity="0.8" />
+  <circle cx="88" cy="45" r="6" fill="#10b981" opacity="0.8" />
+  <text x="120" y="49" font-family="monospace" font-size="12" fill="#f472b6">customer-churn-ml // model-evaluation.py</text>
+  
+  <!-- Champion Metrics Ribbon -->
+  <rect x="36" y="75" width="708" height="90" rx="6" fill="#370d1d" stroke="#9d174d" stroke-width="1" />
+  
+  <text x="56" y="105" font-family="monospace" font-size="11" fill="#fbcfe8">CHAMPION MODEL</text>
+  <text x="56" y="135" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="20" fill="#fdf2f8">Cost-Sensitive XGBoost</text>
+  <text x="56" y="152" font-family="monospace" font-size="10" fill="#f472b6">Leakage-Free ColumnTransformer</text>
+  
+  <line x1="280" y1="88" x2="280" y2="152" stroke="#831843" stroke-width="1" />
+  
+  <text x="300" y="105" font-family="monospace" font-size="11" fill="#fbcfe8">ROC-AUC</text>
+  <text x="300" y="142" font-family="monospace" font-weight="800" font-size="28" fill="#38bdf8">0.8434</text>
+  
+  <line x1="430" y1="88" x2="430" y2="152" stroke="#831843" stroke-width="1" />
+  
+  <text x="450" y="105" font-family="monospace" font-size="11" fill="#fbcfe8">RECALL (SENSITIVITY)</text>
+  <text x="450" y="142" font-family="monospace" font-weight="800" font-size="28" fill="#10b981">78.88%</text>
+  
+  <line x1="600" y1="88" x2="600" y2="152" stroke="#831843" stroke-width="1" />
+  
+  <text x="620" y="105" font-family="monospace" font-size="11" fill="#fbcfe8">CHURNERS CAUGHT</text>
+  <text x="620" y="142" font-family="monospace" font-weight="800" font-size="26" fill="#f43f5e">295 <tspan font-size="14" fill="#fda4af">/ 374</tspan></text>
+  
+  <!-- Confusion Matrix Box -->
+  <rect x="36" y="185" width="345" height="235" rx="6" fill="#1f0710" stroke="#831843" stroke-width="1" />
+  <text x="56" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#fdf2f8">Confusion Matrix (Held-Out Test N=1,409)</text>
+  
+  <rect x="56" y="235" width="145" height="70" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+  <text x="70" y="260" font-family="monospace" font-size="10" fill="#6ee7b7">TRUE NEGATIVE (TN)</text>
+  <text x="70" y="290" font-family="monospace" font-size="22" font-weight="800" fill="#a7f3d0">765</text>
+  
+  <rect x="210" y="235" width="145" height="70" rx="4" fill="#4c0519" stroke="#be123c" stroke-width="1" />
+  <text x="224" y="260" font-family="monospace" font-size="10" fill="#fda4af">FALSE POSITIVE (FP)</text>
+  <text x="224" y="290" font-family="monospace" font-size="22" font-weight="800" fill="#fecdd3">270</text>
+  
+  <rect x="56" y="315" width="145" height="70" rx="4" fill="#4c0519" stroke="#be123c" stroke-width="1" />
+  <text x="70" y="340" font-family="monospace" font-size="10" fill="#fda4af">FALSE NEGATIVE (FN)</text>
+  <text x="70" y="370" font-family="monospace" font-size="22" font-weight="800" fill="#fecdd3">79</text>
+  
+  <rect x="210" y="315" width="145" height="70" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+  <text x="224" y="340" font-family="monospace" font-size="10" fill="#6ee7b7">TRUE POSITIVE (TP)</text>
+  <text x="224" y="370" font-family="monospace" font-size="22" font-weight="800" fill="#a7f3d0">295</text>
+  
+  <!-- Right Prescriptive Playbooks -->
+  <rect x="399" y="185" width="345" height="235" rx="6" fill="#1f0710" stroke="#831843" stroke-width="1" />
+  <text x="419" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#fdf2f8">Prescriptive Retention Engine</text>
+  
+  <rect x="419" y="235" width="305" height="50" rx="4" fill="#370d1d" stroke="#be185d" stroke-width="1" />
+  <text x="431" y="255" font-family="monospace" font-size="10" fill="#fbcfe8">RISK TIER: HIGH (Prob: 84.2%)</text>
+  <text x="431" y="273" font-family="monospace" font-size="10" fill="#fda4af">Playbook: 1-Year Contract Discount Offer</text>
+  
+  <rect x="419" y="295" width="305" height="50" rx="4" fill="#370d1d" stroke="#be185d" stroke-width="1" />
+  <text x="431" y="315" font-family="monospace" font-size="10" fill="#fbcfe8">RISK TIER: MODERATE (Prob: 52.8%)</text>
+  <text x="431" y="333" font-family="monospace" font-size="10" fill="#fef08a">Playbook: Tech Support / Backup Bundle</text>
+  
+  <rect x="419" y="355" width="305" height="50" rx="4" fill="#370d1d" stroke="#be185d" stroke-width="1" />
+  <text x="431" y="375" font-family="monospace" font-size="10" fill="#fbcfe8">DEPLOYMENT: Streamlit Cloud</text>
+  <text x="431" y="393" font-family="monospace" font-size="10" fill="#6ee7b7">Real-time single + batch CSV scoring</text>
+</svg>
+

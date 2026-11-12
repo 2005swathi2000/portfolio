@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ds-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#ds-grad)" />
+  <rect x="20" y="20" width="760" height="440" rx="8" fill="#041517" stroke="#0d9488" stroke-width="1.5" />
+  
+  <circle cx="48" cy="45" r="6" fill="#ef4444" opacity="0.8" />
+  <circle cx="68" cy="45" r="6" fill="#f59e0b" opacity="0.8" />
+  <circle cx="88" cy="45" r="6" fill="#10b981" opacity="0.8" />
+  <text x="120" y="49" font-family="monospace" font-size="12" fill="#2dd4bf">docspot-mern // slot-reservation-lock.ts</text>
+  
+  <!-- Architectural Header -->
+  <rect x="36" y="75" width="708" height="90" rx="6" fill="#113038" stroke="#0f766e" stroke-width="1" />
+  <text x="56" y="105" font-family="monospace" font-size="11" fill="#99f6e4">CONCURRENCY SAFEGUARD</text>
+  <text x="56" y="135" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="20" fill="#f0fdfa">Optimistic Lock &amp; Compound Indexing</text>
+  <text x="56" y="152" font-family="monospace" font-size="10" fill="#5eead4">MERN Stack (MongoDB, Express, React, Node.js)</text>
+  
+  <line x1="440" y1="88" x2="440" y2="152" stroke="#134e4a" stroke-width="1" />
+  
+  <text x="460" y="105" font-family="monospace" font-size="11" fill="#99f6e4">DOUBLE BOOKING DEFENSE</text>
+  <text x="460" y="140" font-family="monospace" font-weight="800" font-size="22" fill="#2dd4bf">Zero Collisions</text>
+  
+  <!-- Timeslot Matrix Preview -->
+  <rect x="36" y="185" width="370" height="235" rx="6" fill="#091e24" stroke="#115e59" stroke-width="1" />
+  <text x="56" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#f0fdfa">Doctor Schedule &amp; Slots (Live State)</text>
+  
+  <g transform="translate(56, 235)">
+    <!-- Slot 1 -->
+    <rect x="0" y="0" width="105" height="50" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+    <text x="12" y="22" font-family="monospace" font-size="11" fill="#6ee7b7">09:00 AM</text>
+    <text x="12" y="38" font-family="monospace" font-size="9" fill="#a7f3d0">CONFIRMED</text>
+
+    <!-- Slot 2 -->
+    <rect x="115" y="0" width="105" height="50" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+    <text x="127" y="22" font-family="monospace" font-size="11" fill="#6ee7b7">09:30 AM</text>
+    <text x="127" y="38" font-family="monospace" font-size="9" fill="#a7f3d0">CONFIRMED</text>
+
+    <!-- Slot 3 (Locked / in progress) -->
+    <rect x="230" y="0" width="105" height="50" rx="4" fill="#451a03" stroke="#f59e0b" stroke-width="1" />
+    <text x="242" y="22" font-family="monospace" font-size="11" fill="#fcd34d">10:00 AM</text>
+    <text x="242" y="38" font-family="monospace" font-size="9" fill="#fde68a">HOLD (120s)</text>
+
+    <!-- Slot 4 -->
+    <rect x="0" y="60" width="105" height="50" rx="4" fill="#134e4a" stroke="#2dd4bf" stroke-width="1" />
+    <text x="12" y="82" font-family="monospace" font-size="11" fill="#ccfbf1">10:30 AM</text>
+    <text x="12" y="98" font-family="monospace" font-size="9" fill="#5eead4">AVAILABLE</text>
+
+    <!-- Slot 5 -->
+    <rect x="115" y="60" width="105" height="50" rx="4" fill="#134e4a" stroke="#2dd4bf" stroke-width="1" />
+    <text x="127" y="82" font-family="monospace" font-size="11" fill="#ccfbf1">11:00 AM</text>
+    <text x="127" y="98" font-family="monospace" font-size="9" fill="#5eead4">AVAILABLE</text>
+
+    <!-- Slot 6 -->
+    <rect x="230" y="60" width="105" height="50" rx="4" fill="#134e4a" stroke="#2dd4bf" stroke-width="1" />
+    <text x="242" y="82" font-family="monospace" font-size="11" fill="#ccfbf1">11:30 AM</text>
+    <text x="242" y="98" font-family="monospace" font-size="9" fill="#5eead4">AVAILABLE</text>
+  </g>
+
+  <!-- Mongo Compound Index Details -->
+  <rect x="420" y="185" width="324" height="235" rx="6" fill="#091e24" stroke="#115e59" stroke-width="1" />
+  <text x="440" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#f0fdfa">Compound Unique Constraint</text>
+  <rect x="435" y="235" width="295" height="165" rx="4" fill="#031114" />
+  <text x="448" y="260" font-family="monospace" font-size="10.5" fill="#fcd34d">db.appointments.createIndex(</text>
+  <text x="460" y="280" font-family="monospace" font-size="10" fill="#99f6e4">{ doctorId: 1, date: 1, slot: 1 },</text>
+  <text x="460" y="300" font-family="monospace" font-size="10" fill="#67e8f9">{ unique: true }</text>
+  <text x="448" y="320" font-family="monospace" font-size="10.5" fill="#fcd34d">)</text>
+  <text x="448" y="350" font-family="monospace" font-size="10" fill="#34d399">// Optimistic Concurrency:</text>
+  <text x="448" y="370" font-family="monospace" font-size="10" fill="#94a3b8">versionKey: '__v' atomic check</text>
+  <text x="448" y="388" font-family="monospace" font-size="10" fill="#94a3b8">prevents collision under high load</text>
+</svg>
+
