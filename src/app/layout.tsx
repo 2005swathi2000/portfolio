@@ -29,10 +29,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Hanumanthu Swathi | SDE, FSD and AI Engineer",
   description:
-    "Recruiter-ready portfolio of Hanumanthu Swathi. B.Tech IT at ACET Surampalem (CGPA 8.30). Real-time web systems, high-throughput ELT pipelines, and production machine learning.",
+    "Recruiter-ready portfolio of Hanumanthu Swathi — SDE, FSD and AI Engineer. B.Tech IT at ACET Surampalem (CGPA 8.30). Real-time web systems, high-throughput ELT pipelines, and machine learning.",
   keywords: [
     "Hanumanthu Swathi",
     "Swathi Hanumanthu",
+    "SDE, FSD and AI Engineer",
     "Software Development Engineer",
     "Full-Stack Developer",
     "AI Engineer",
@@ -57,13 +58,13 @@ export const metadata: Metadata = {
     siteName: "Hanumanthu Swathi — Portfolio",
     title: "Hanumanthu Swathi | SDE, FSD and AI Engineer",
     description:
-      "B.Tech IT (CGPA 8.30, graduating May 2027). 7 featured engineering projects across Real-Time Web, Cloud Pipelines, and Machine Learning.",
+      "Portfolio of Hanumanthu Swathi — SDE, FSD and AI Engineer. B.Tech IT (CGPA 8.30). 7 featured engineering projects across Real-Time Web, Cloud Pipelines, and Machine Learning.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Hanumanthu Swathi — Developer Portfolio",
+        alt: "Hanumanthu Swathi — SDE, FSD and AI Engineer Portfolio",
       },
     ],
   },
@@ -71,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hanumanthu Swathi | SDE, FSD and AI Engineer",
     description:
-      "B.Tech IT at ACET Surampalem (CGPA 8.30). 7 featured engineering projects across Real-Time Web, Cloud Pipelines, and Machine Learning.",
+      "Portfolio of Hanumanthu Swathi — SDE, FSD and AI Engineer. B.Tech IT at ACET Surampalem (CGPA 8.30). 7 featured engineering projects across Real-Time Web, Cloud Pipelines, and Machine Learning.",
   },
   robots: {
     index: true,
@@ -90,7 +91,7 @@ const jsonLdPerson = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Hanumanthu Swathi",
-  jobTitle: "Software Development Engineer",
+  jobTitle: "SDE, FSD and AI Engineer",
   url: "https://github.com/2005swathi2000",
   sameAs: [
     "https://github.com/2005swathi2000",

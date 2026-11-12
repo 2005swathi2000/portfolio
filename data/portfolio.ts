@@ -571,8 +571,8 @@ export const portfolioData: PortfolioData = {
       {
         id: "exp-infosys",
         role: "Python Technology Stack Virtual Intern",
-        organization: "Infosys Springboard",
-        period: "8 weeks (Completed Sept 2026)",
+        organization: "Infosys Springboard Virtual Internship 7.0 Batch 1",
+        period: "8 weeks (Milestones completed Sept 2026)",
         type: "Internship",
         bullets: [
           "Completed industry-aligned Batch 1 virtual internship covering core Python engineering, data structure implementations, and application development.",

@@ -38,7 +38,7 @@ draw_og.text((124, 85), "OPEN TO WORK · SDE", fill=(52, 211, 153), font=font_ba
 
 # Name & Title
 draw_og.text((80, 160), "Hanumanthu Swathi", fill=(255, 255, 255), font=font_name)
-draw_og.text((80, 245), "SDE, Full-Stack & AI Engineer", fill=(129, 140, 248), font=font_sub)
+draw_og.text((80, 245), "SDE, FSD and AI Engineer", fill=(129, 140, 248), font=font_sub)
 
 # Value statement / summary
 draw_og.text(

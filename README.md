@@ -1,10 +1,11 @@
-# Hanumanthu Swathi — Recruiter-Ready SDE Portfolio
+# Hanumanthu Swathi — SDE, FSD and AI Engineer
 
 A high-performance, modern portfolio built for **Hanumanthu Swathi** using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Designed specifically for technical recruiters and engineering hiring managers at top tier product companies (Google, Amazon, Flipkart, Walmart).
 
 - **Live URL:** [https://swathi-portfolio-omega.vercel.app](https://swathi-portfolio-omega.vercel.app)
 - **GitHub:** [@2005swathi2000](https://github.com/2005swathi2000)
-- **Target Role:** Software Development Engineer (SDE) Internships & Entry-Level Roles
+- **Headline:** SDE, FSD and AI Engineer
+- **Target Role:** SDE, FSD and AI Engineer / SWE Internships & Entry-Level Roles
 
 ---
 
